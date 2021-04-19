@@ -44,4 +44,21 @@ function adicionaMesAtual() {
 
 //Criando elementos para o tbody
 
+function armazenaDadosTabela(receita, prevista, ganho) {
+    var tabela = document.querySelector(".tabelaPrincipal");
+    var quantidadeLinhas = tabela.rows.length;
+    var linha = tabela.insertRow(quantidadeLinhas);
+
+    var cellReceita = linha.insertCell(0)
+    var cellPrevista = linha.insertCell(1)
+    var cellGanho = linha.insertCell(2)
+    
+
+    cellReceita.innerHTML = quantidadeLinhas;
+    cellReceita.innerHTML = receita;
+    cellPrevista.innerHTML = prevista;
+    cellGanho.innerHTML = ganho;
+    
+}
+
 

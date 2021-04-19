@@ -8,40 +8,42 @@
     <title>Calculador de despezas</title>
 </head>
 <body>
-    <h1 style="text-align: center;">Calculador de Despezas</h1>
+    <!--Menu Nav-->
+    <h1 style="text-align: center;">Calculador de Despesas</h1>
     <aside>
         <div id="menu-opener">
             <img onclick="menuToggle()" class="menu-opener" src="https://th.bing.com/th/id/R939a929ac168b2457fd050ff81133f35?rik=EpDn3jaLxVXSLg&pid=ImgRaw" width="50" height="50" alt="">
         </div>
         <nav id="menu-area">
             <ul>
-                <button onclick="adiciona()" class="adiciona">Adicionar despezas</button>
+                <button onclick="adiciona()" class="adiciona">Adicionar despesas</button>
                 <button onclick="adicionaMesAtual()" class="adicionaMesAtual">Atualizar mês</button>
                 <button onclick="limpa()" class="limpa">Limpar</button>
             </ul>
         </nav>
     </aside>
-
+    <!--Modal-->
     <section id="wrapper-modal">
         <div id="modal">
             <img id="fechaModal" onclick="fechaModal()" src="https://th.bing.com/th/id/R4917db2a2d25feeb1cfcf5564e5f4c55?rik=3THDcyLwJ%2bKvkw&pid=ImgRaw" alt="" width="20px" height="20px">
+            <!--Form-->
             <form>
-                <input type="text" id="receita" placeholder="Receita: ">
-                <input type="number" id="valor" placeholder="Valor: ">
+                <input type="text" id="receita" name="txtReceita" placeholder="Receita: ">
+                <input type="number" id="valor" name="txtGanho" placeholder="Valor: ">
 
                 <br>
-                <button id="submit">Adicionar despeza</button>
+                <input id="submit" onclick="armazenaDadosTabela(txtReceita.value, txtGanho.value)" type="submit" value="Adicionar Dispesa">
             </form>
         </div>
     </section>
-
+    <!--Tabela-->
     <table class="tabelaPrincipal" border="1">
         <h2 id="mes"></h2>
         <thead>
             <tr>
-                <td id="receita">Receitas</td>
-                <td id="previsto">Previsto</td>
-                <td id="ganho">Ganho</td>
+                <td>Receitas</td>
+                <td>Prevista</td>
+                <td>Ganho</td>
             </tr>
         </thead>
 

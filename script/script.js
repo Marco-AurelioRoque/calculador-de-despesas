@@ -34,36 +34,14 @@ function fechaModal() {
     document.querySelector("h2").style.opacity = "100%"
 }
 
-function limpa() {
-
+function adicionaMesAtual() {
+    var mes = new Date();
+    var mesAtual = mes.getMonth();
+    mesAtual = mesAtual + 1
+    document.getElementById("mes").innerHTML  = ("Mês: " + mesAtual)
 }
 
 
 //Criando elementos para o tbody
 
-var corpoTabela = document.querySelector("tbody")
 
-
-this.criarLinhaTabela = function (){
-    var linha = document.createElement("tr")
-    var Receita = document.createElement("td")
-    var Previsto = document.createElement("td")
-    var Ganho = document.createElement("td")
-
-    var textoReceita = document.createTextNode(receita)
-    var textoPrevisto = document.createTextNode(previsto)
-    var textoGanho = document.createTextNode(valor)
-
-    Receita.appendChild(textoReceita)
-    Previsto.appendChild(textoPrevisto)
-    Ganho.appendChild(textoGanho)
-
-    linha.appendChild(Receita)
-    linha.appendChild(Previsto)
-    linha.appendChild(Ganho)
-
-    corpoTabela.appendChild(linha)
-
-}
-
-criarLinhaTabela()

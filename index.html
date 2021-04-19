@@ -8,17 +8,18 @@
     <title>Calculador de despezas</title>
 </head>
 <body>
-    
+    <h1 style="text-align: center;">Calculador de Despezas</h1>
     <aside>
         <div id="menu-opener">
             <img onclick="menuToggle()" class="menu-opener" src="https://th.bing.com/th/id/R939a929ac168b2457fd050ff81133f35?rik=EpDn3jaLxVXSLg&pid=ImgRaw" width="50" height="50" alt="">
         </div>
-        <div id="menu-area">
+        <nav id="menu-area">
             <ul>
                 <button onclick="adiciona()" class="adiciona">Adicionar despezas</button>
-                <button onclick="limpa()" class="limpa">Limpar e trocar mes</button>
+                <button onclick="adicionaMesAtual()" class="adicionaMesAtual">Atualizar mês</button>
+                <button onclick="limpa()" class="limpa">Limpar</button>
             </ul>
-        </div>
+        </nav>
     </aside>
 
     <section id="wrapper-modal">
@@ -35,7 +36,7 @@
     </section>
 
     <table class="tabelaPrincipal" border="1">
-        <h2>Mes 1</h2>
+        <h2 id="mes"></h2>
         <thead>
             <tr>
                 <td id="receita">Receitas</td>
@@ -50,7 +51,9 @@
 
     </table>
 
-    
+    <div class="maisDetalhes">
+        <button>Mostrar detalhes</button>
+    </div>
 
     <script src="script/script.js"></script>
 </body>

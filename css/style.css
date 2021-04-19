@@ -3,7 +3,8 @@ body {
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(235, 235, 235);
+    background-color: #A3A1A8;
+    color: rgb(255, 255, 255);
 }
 /*Menu navegação*/
 aside {
@@ -23,7 +24,7 @@ aside {
 #menu-area {
     width:0px;
     height:100vh;
-    background:#ccc;
+    background-color: #7D6B7D;
     overflow-x:hidden;
     overflow-y:auto;
     transition: all ease .5s;
@@ -37,9 +38,10 @@ aside {
     height: 50px;
     width: 150px;
     margin-top: 50px;
+    border-radius: 5px;
 }
 .adiciona:hover{
-    background-color: rgb(41, 197, 41);
+    background-color: rgb(15, 224, 15);
 }
 
 .limpa{
@@ -50,10 +52,28 @@ aside {
     height: 50px;
     width: 150px;
     margin-top: 50px;
+    border-radius: 5px;
 }
+
 .limpa:hover{
-    background-color: rgb(216, 34, 34);
+    background-color: rgb(228, 19, 19);
 }
+
+.adicionaMesAtual{
+    background-color: yellow;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    cursor: pointer;
+    height: 50px;
+    width: 150px;
+    margin-top: 50px;
+    border-radius: 5px;
+}
+
+.adicionaMesAtual:hover{
+    background-color: rgb(240, 240, 12);
+}
+
 /*Tabela*/
 
 h2{
@@ -75,7 +95,7 @@ table {
     margin-right: auto;
     width: 320px;
     height: 250px;
-    background-color: blue;
+    background-color: #FF8C64;
     float: left;
     border-radius: 10px;
     border: 2px solid black;
@@ -125,3 +145,11 @@ table {
     cursor: pointer;
 }
 
+#fechaModal:hover{
+    background-color: red;
+}
+
+.maisDetalhes{
+    text-align: center;
+    margin-top: 50px;
+}

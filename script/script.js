@@ -1,7 +1,7 @@
 //Abre fecha menu
 
 function menuToggle() {
-    let menuArea = document.getElementById("menu-area")
+    var menuArea = document.getElementById("menu-area")
 
     if(menuArea.style.width == "200px") {
         menuArea.style.width = "0px"
@@ -12,16 +12,32 @@ function menuToggle() {
 
 //Botoes adiciona, limpa
 function adiciona() {
-    let receita = prompt("Receita: ")
-    let valor = prompt("Valor: ")
+    document.getElementById("wrapper-modal").style.display = "block"
+    document.querySelector("aside").style.filter = "blur(0.7px)"
+    document.querySelector("table").style.filter = "blur(0.7px)"
+    document.querySelector("h2").style.filter = "blur(0.7px)"
 
-
+    document.querySelector("aside").style.opacity = "60%"
+    document.querySelector("table").style.opacity = "60%"
+    document.querySelector("h2").style.opacity = "60%"
+    
 }
 
+function fechaModal() {
+    document.getElementById("wrapper-modal").style.display = "none"
+    document.querySelector("aside").style.filter = "none"
+    document.querySelector("table").style.filter = "none"
+    document.querySelector("h2").style.filter = "none"
+
+    document.querySelector("aside").style.opacity = "100%"
+    document.querySelector("table").style.opacity = "100%"
+    document.querySelector("h2").style.opacity = "100%"
+}
 
 function limpa() {
 
 }
+
 
 //Criando elementos para o tbody
 

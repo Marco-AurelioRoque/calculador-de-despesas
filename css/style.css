@@ -144,7 +144,17 @@ table {
     background-color: rgb(19, 230, 19);
 }
 
+#cancelar{
+    margin-top: 10px;
+    width: 150px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: rgb(255, 8, 0);
+    cursor: pointer;
+}
+
 #fechaModal{
+    float: center;
     margin-top: 10px;
     cursor: pointer;
 }

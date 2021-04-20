@@ -2,7 +2,6 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <title>Calculador de despezas</title>
@@ -28,8 +27,6 @@
 
     <section id="wrapper-modal">
         <div id="modal">
-            <img id="fechaModal" onclick="fechaModal()" src="https://th.bing.com/th/id/R4917db2a2d25feeb1cfcf5564e5f4c55?rik=3THDcyLwJ%2bKvkw&pid=ImgRaw" alt="" width="20px" height="20px">
-
             <!--Form-->
 
             <form>
@@ -37,7 +34,9 @@
                 <input type="number" id="valor" name="numberValor" placeholder="Valor: ">
 
                 <br>
-                <input id="submit" onclick="armazenaDadosTabela(txtReceita.value, numberValor.value)" type="submit" value="Adicionar Dispesa">
+                <input id="submit" onclick="armazenaDadosTabela(txtReceita.value, numberValor.value)" type="button" value="Adicionar Dispesa">
+                <br>
+                <input onclick="fechaModal(this)" type="button" id="cancelar" value="Cancelar">
             </form>
         </div>
     </section>

@@ -149,10 +149,6 @@ table {
     cursor: pointer;
 }
 
-#fechaModal:hover{
-    background-color: yellow;
-}
-
 .maisDetalhes{
     text-align: center;
     margin-top: 50px;

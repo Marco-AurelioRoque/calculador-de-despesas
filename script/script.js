@@ -41,6 +41,9 @@ function adicionaMesAtual() {
     document.getElementById("mes").innerHTML  = ("Mês: " + mesAtual)
 }
 
+function limpa() {
+    document.getElementById("mes").innerHTML = ""
+}
 
 //Criando elementos para o tbody
 

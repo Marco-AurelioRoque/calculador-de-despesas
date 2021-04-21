@@ -3,8 +3,8 @@ body {
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #A3A1A8;
-    color: rgb(255, 255, 255);
+    background-color: #e9e5e5;
+    color: rgb(0, 0, 0);
 }
 /*Menu navegação*/
 aside {
@@ -24,7 +24,7 @@ aside {
 #menu-area {
     width:0px;
     height:100vh;
-    background-color: #7D6B7D;
+    background-color: #c0e0dc;
     overflow-x:hidden;
     overflow-y:auto;
     transition: all ease .5s;
@@ -83,7 +83,7 @@ h2{
 table {
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 20%;
     border-collapse: collapse;
 }
 
@@ -95,7 +95,7 @@ table {
     margin-right: auto;
     width: 320px;
     height: 250px;
-    background-color: #FF8C64;
+    background-color: #fbc4fd;
     float: left;
     border-radius: 10px;
     border: 2px solid black;
@@ -159,7 +159,14 @@ table {
     cursor: pointer;
 }
 
-.maisDetalhes{
+/*Mostrar detalhes*/
+.detalhes{
     text-align: center;
-    margin-top: 50px;
+    margin-top: 25px;
 }
+
+#resultadoTotal{
+    display: none;
+    font-size: 16px;
+}
+

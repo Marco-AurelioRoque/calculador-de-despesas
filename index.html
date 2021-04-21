@@ -47,9 +47,8 @@
         <h2 id="mes"></h2>
         <thead>
             <tr>
-                <td>Receitas</td>
-                <td>Prevista</td>
-                <td>Ganho</td>
+                <td>Despesas</td>
+                <td>Valores</td>
             </tr>
         </thead>
 
@@ -57,8 +56,14 @@
 
     </table>
 
-    <div class="maisDetalhes">
-        <button>Mostrar detalhes</button>
+    <div class="detalhes">
+        
+        <button id="maisDetalhes" onclick="mostrarDetalhes()">Mostrar detalhes</button>
+        <br>
+        <p id="resultadoTotal">Manutenção</p>
+        <br>
+        <button id="ocultaDetalhes" onclick="ocultarDetalhes()" disabled>Ocultar detalhes</button>
+        
     </div>
 
     <script src="script/script.js"></script>

@@ -1,7 +1,7 @@
 //Abre fecha menu
 
 function menuToggle() {
-    var menuArea = document.getElementById("menu-area")
+    let menuArea = document.getElementById("menu-area")
 
     if(menuArea.style.width == "200px") {
         menuArea.style.width = "0px"
@@ -35,8 +35,8 @@ function fechaModal() {
 }
 
 function adicionaMesAtual() {
-    var mes = new Date();
-    var mesAtual = mes.getMonth();
+    let mes = new Date();
+    let mesAtual = mes.getMonth();
     mesAtual = mesAtual + 1
     document.getElementById("mes").innerHTML  = ("Mês: " + mesAtual)
 }
@@ -47,20 +47,31 @@ function limpa() {
 
 //Criando elementos para o tbody
 
-function armazenaDadosTabela(receita, prevista, ganho) {
-    var tabela = document.getElementById("tabelaPrincipal");
-    var quantidadeLinhas = tabela.rows.length;
-    var linha = tabela.insertRow(quantidadeLinhas);
+function armazenaDadosTabela(receita, valor) {
+    let tabela = document.getElementById("tabelaPrincipal");
+    let quantidadeLinhas = tabela.rows.length;
+    let linha = tabela.insertRow(quantidadeLinhas);
 
-    var cellReceita = linha.insertCell(0);
-    var cellPrevista = linha.insertCell(1);
-    var cellGanho = linha.insertCell(2);
+    let cellReceita = linha.insertCell(0);
+    let cellValor = linha.insertCell(1);
     
 
     cellReceita.innerHTML = quantidadeLinhas;
     cellReceita.innerHTML = receita
-    cellPrevista.innerHTML = prevista;
-    cellGanho.innerHTML = ganho;
+    cellValor.innerHTML = valor
     
+}
+
+//Mostrar Detalhes
+function mostrarDetalhes() {
+    document.getElementById("resultadoTotal").style.display = "block" 
+    document.getElementById("maisDetalhes").disabled = true
+    document.getElementById("ocultaDetalhes").disabled = false
+}
+
+function ocultarDetalhes() {
+    document.getElementById("resultadoTotal").style.display = "none"
+    document.getElementById("maisDetalhes").disabled = false
+    document.getElementById("ocultaDetalhes").disabled = true
 }
 

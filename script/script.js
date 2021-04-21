@@ -43,6 +43,8 @@ function adicionaMesAtual() {
 
 function limpa() {
     document.getElementById("mes").innerHTML = ""
+
+    tabela.rows.style.display = "none"
 }
 
 //Criando elementos para o tbody
@@ -62,7 +64,7 @@ function armazenaDadosTabela(receita, valor) {
     
 }
 
-//Mostrar Detalhes
+//Mostrar Detalhes / Oculta Detalhes
 function mostrarDetalhes() {
     document.getElementById("resultadoTotal").style.display = "block" 
     document.getElementById("maisDetalhes").disabled = true
